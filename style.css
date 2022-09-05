@@ -12,6 +12,7 @@ body{
     margin: 0;
     background-repeat: no-repeat;
     background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+    background-position: top left, bottom right;
 }
 
 .main{
