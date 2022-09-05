@@ -1,0 +1,127 @@
+*{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+}
+
+/* @media screen and (max-width:376px){
+    
+} */
+
+
+body{
+    margin: 0;
+    background-repeat: no-repeat;
+    background-image: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
+}
+
+.main{
+    margin: 7vw;
+    position: relative;
+}
+
+.heading{
+    color: hsl(300, 43%, 22%);
+    font-size: 3rem;
+    font-weight: 700;
+    width: 25vw;
+}
+.sub-heading{
+    width: 25vw;
+    color: hsl(303, 10%, 53%);
+    margin: 2rem 0;
+    line-height: 1.3rem;
+}
+
+.rating{
+    position: absolute;
+    right:0;
+    top:0;
+    transform: translateY(-20px);
+    background: hsl(300, 24%, 96%);
+    width: 23rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding:1rem .3rem;
+    border-radius: 10px;
+    color:hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+.stars-description{
+    margin-left:2rem;
+}
+
+.rating.first{
+    top:2rem;
+    margin-right: 4rem;
+}
+
+.rating.second{
+    top:4rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+}
+.rating.third{
+    top:6rem;
+    margin-top: 4rem;
+}
+
+.review-container{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.review{
+    width: 30%;
+    height: auto;
+    line-height: 1.3rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 2.5rem;
+    margin-right: 4rem;
+    color:white;
+    background-color: hsl(300, 43%, 22%);
+}
+.review img{
+    border-radius: 50%;
+    width: 4rem;
+    height: auto;
+}
+.review-client{
+    width: 12rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.review-name{
+    font-weight: 700;
+}
+
+.review.second{
+    position: relative;
+    top:2rem;
+}
+.review.third{
+    position: relative;
+    top:4rem;
+    margin-right: 0;
+}
+
+.text-primary-pink{
+   color: hsl(333, 80%, 67%);
+}
+
+.attribution   {
+    font-size: 11px;
+    text-align: center;
+  }
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    font-size: 2rem;
+}
