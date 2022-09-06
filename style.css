@@ -3,21 +3,27 @@
     font-size: 15px;
 }
 
-/* @media screen and (max-width:376px){
-    
-} */
+
 
 
 body{
     margin: 0;
     background-repeat: no-repeat;
-    background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
-    background-position: top left, bottom right;
+    background-image: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
 }
 
 .main{
-    margin: 7vw;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    margin-top:2rem;
+    height: 350px;
+    flex-wrap:wrap;
     position: relative;
+    display: flex; 
+    flex-direction: column;
+}
+.main{
+    display: flex;
 }
 
 .heading{
@@ -33,16 +39,18 @@ body{
     line-height: 1.3rem;
 }
 
+.rating-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 .rating{
-    position: absolute;
-    right:0;
-    top:0;
-    transform: translateY(-20px);
     background: hsl(300, 24%, 96%);
     width: 23rem;
     display: flex;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: flex;
     padding:1rem .3rem;
     border-radius: 10px;
     color:hsl(300, 43%, 22%);
@@ -52,36 +60,29 @@ body{
     margin-left:2rem;
 }
 
-.rating.first{
-    top:2rem;
-    margin-right: 4rem;
-}
 
 .rating.second{
-    top:4rem;
+    margin-right:2rem;
     margin-top: 2rem;
-    margin-right: 2rem;
 }
 .rating.third{
-    top:6rem;
-    margin-top: 4rem;
+    margin-right:4rem;
+    margin-top: 3rem;
 }
 
 .review-container{
     display: flex;
-    margin-bottom: 2rem;
+    margin: 1rem;
 }
-
 .review{
-    width: 30%;
+    width: 30vw;
     height: auto;
     line-height: 1.3rem;
-    position: relative;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     padding: 2.5rem;
-    margin-right: 4rem;
+    margin:2rem;
     color:white;
     background-color: hsl(300, 43%, 22%);
 }
@@ -103,16 +104,6 @@ body{
     font-weight: 700;
 }
 
-.review.second{
-    position: relative;
-    top:2rem;
-}
-.review.third{
-    position: relative;
-    top:4rem;
-    margin-right: 0;
-}
-
 .text-primary-pink{
    color: hsl(333, 80%, 67%);
 }
@@ -125,4 +116,29 @@ body{
 .attribution a {
     color: hsl(228, 45%, 44%);
     font-size: 2rem;
+}
+
+/* for iPad viewing*/
+@media screen and (max-width:830px){
+    .main{
+        display: block;
+    }
+    .review-container{
+        flex-direction: column;
+        margin-top: 14rem;
+    
+    }
+    .rating-container{
+        align-items: flex-start;
+    }
+}
+
+/* for mobile viewing*/
+@media screen and (max-width:400px){
+    .heading,.sub-heading{
+        width: 50vw;
+    }
+    .review{
+        width: 50vw;
+    }
 }
